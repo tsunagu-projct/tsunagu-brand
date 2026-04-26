@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>つなぐProject — デザインシステム全カード一覧</title>
+<link rel="stylesheet" href="colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--washi-100); }
+  body {
+    font-family: var(--font-body);
+    color: var(--fg-1);
+    -webkit-font-smoothing: antialiased;
+  }
+  .page-header {
+    padding: 48px 48px 24px;
+    border-bottom: 1px solid var(--line-200);
+    background: var(--washi-50);
+    display: flex; align-items: flex-end; justify-content: space-between;
+    flex-wrap: wrap; gap: 16px;
+  }
+  .page-header .left { display: flex; align-items: center; gap: 16px; }
+  .page-header .mark {
+    width: 56px; height: 56px;
+    background-image: url("assets/logo-mark.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .page-header h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.005em;
+    color: var(--ink-900);
+  }
+  .page-header .sub {
+    margin: 4px 0 0;
+    font: 500 13px var(--font-body);
+    color: var(--fg-3);
+  }
+  .page-header .right {
+    font: 500 12px/1.4 var(--font-body);
+    color: var(--fg-3);
+    text-align: right;
+  }
+  .page-header .right b { color: var(--fg-1); font-weight: 700; }
+
+  .toc {
+    padding: 16px 48px;
+    background: var(--washi-50);
+    border-bottom: 1px solid var(--line-200);
+    position: sticky; top: 0; z-index: 10;
+    backdrop-filter: blur(8px);
+    background: rgba(247, 245, 240, 0.92);
+    display: flex; flex-wrap: wrap; gap: 8px 14px;
+  }
+  .toc a {
+    font: 500 12px var(--font-body);
+    color: var(--fg-2);
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: var(--r-full);
+    border: 1px solid var(--line-200);
+    background: var(--washi-0);
+    transition: all 160ms ease;
+  }
+  .toc a:hover {
+    color: var(--ink-900);
+    border-color: var(--ink-900);
+  }
+
+  .group {
+    padding: 32px 48px 8px;
+  }
+  .group h2 {
+    font: 700 11px/1 var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin: 0 0 20px;
+  }
+  .stack {
+    display: flex; flex-direction: column; gap: 24px;
+    padding-bottom: 32px;
+  }
+  .item { }
+  .item .label {
+    font: 600 12px var(--font-body);
+    color: var(--fg-2);
+    margin-bottom: 8px;
+    display: flex; align-items: baseline; gap: 10px;
+  }
+  .item .label .small {
+    font: 500 10px/1 var(--font-mono);
+    color: var(--fg-3);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .frame {
+    border-radius: var(--r-md);
+    border: 1px solid var(--line-200);
+    background: var(--washi-50);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+  }
+  .frame iframe {
+    display: block;
+    width: 100%;
+    border: 0;
+  }
+
+  /* Footer */
+  footer {
+    padding: 48px;
+    text-align: center;
+    color: var(--fg-3);
+    font: 500 11px var(--font-mono);
+    letter-spacing: 0.06em;
+    border-top: 1px solid var(--line-200);
+    background: var(--washi-50);
+  }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <div class="left">
+    <div class="mark"></div>
+    <div>
+      <h1>つなぐProject — デザインシステム</h1>
+      <p class="sub">Brand identity · 全カード一覧 · April 2026</p>
+    </div>
+  </div>
+  <div class="right">
+    <b>tsunagu-project181.com</b><br>
+    note · X · Instagram
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#brand">Brand</a>
+  <a href="#colors">Colors</a>
+  <a href="#type">Type</a>
+  <a href="#spacing">Spacing</a>
+  <a href="#components">Components</a>
+  <a href="#kits">UI Kits</a>
+  <a href="#publish">Publishing</a>
+</nav>
+
+<section class="group" id="brand">
+  <h2>Brand</h2>
+  <div class="stack">
+    <div class="item">
+      <div class="label">Logo lockup <span class="small">— preview/logo.html</span></div>
+      <div class="frame"><iframe src="preview/logo.html" height="220" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Brand mark <span class="small">— preview/mark.html</span></div>
+      <div class="frame"><iframe src="preview/mark.html" height="220" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Iconography <span class="small">— preview/iconography.html</span></div>
+      <div class="frame"><iframe src="preview/iconography.html" height="280" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="group" id="colors">
+  <h2>Colors</h2>
+  <div class="stack">
+    <div class="item">
+      <div class="label">Brand · 墨 sumi × 水 mizu <span class="small">— preview/colors-brand.html</span></div>
+      <div class="frame"><iframe src="preview/colors-brand.html" height="280" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Surface · 和紙 washi <span class="small">— preview/colors-surface.html</span></div>
+      <div class="frame"><iframe src="preview/colors-surface.html" height="260" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Semantic <span class="small">— preview/colors-semantic.html</span></div>
+      <div class="frame"><iframe src="preview/colors-semantic.html" height="200" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="group" id="type">
+  <h2>Type</h2>
+  <div class="stack">
+    <div class="item">
+      <div class="label">Display <span class="small">— preview/type-display.html</span></div>
+      <div class="frame"><iframe src="preview/type-display.html" height="280" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Body <span class="small">— preview/type-body.html</span></div>
+      <div class="frame"><iframe src="preview/type-body.html" height="240" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Accent (serif / quote) <span class="small">— preview/type-accent.html</span></div>
+      <div class="frame"><iframe src="preview/type-accent.html" height="220" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="group" id="spacing">
+  <h2>Spacing · Radii · Shadows</h2>
+  <div class="stack">
+    <div class="item">
+      <div class="label">Spacing scale <span class="small">— preview/spacing.html</span></div>
+      <div class="frame"><iframe src="preview/spacing.html" height="220" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Radii <span class="small">— preview/radii.html</span></div>
+      <div class="frame"><iframe src="preview/radii.html" height="180" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Shadows <span class="small">— preview/shadows.html</span></div>
+      <div class="frame"><iframe src="preview/shadows.html" height="180" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="group" id="components">
+  <h2>Components</h2>
+  <div class="stack">
+    <div class="item">
+      <div class="label">Buttons <span class="small">— preview/buttons.html</span></div>
+      <div class="frame"><iframe src="preview/buttons.html" height="200" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Inputs <span class="small">— preview/inputs.html</span></div>
+      <div class="frame"><iframe src="preview/inputs.html" height="240" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Cards & Badges <span class="small">— preview/cards-badges.html</span></div>
+      <div class="frame"><iframe src="preview/cards-badges.html" height="280" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="group" id="kits">
+  <h2>UI Kits</h2>
+  <div class="stack">
+    <div class="item">
+      <div class="label">Note feed — 最新note記事カード <span class="small">— ui_kits/note_feed/index.html</span></div>
+      <div class="frame"><iframe src="ui_kits/note_feed/index.html" height="780" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Marketing site — マーケサイトひな形 <span class="small">— ui_kits/marketing/index.html</span></div>
+      <div class="frame"><iframe src="ui_kits/marketing/index.html" height="900" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Note reader — 記事リーダー <span class="small">— ui_kits/note_reader/index.html</span></div>
+      <div class="frame"><iframe src="ui_kits/note_reader/index.html" height="800" loading="lazy"></iframe></div>
+    </div>
+    <div class="item">
+      <div class="label">Slides — プレゼンテンプレート <span class="small">— slides/index.html</span></div>
+      <div class="frame"><iframe src="slides/index.html" height="600" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="group" id="publish">
+  <h2>Publishing</h2>
+  <div class="stack">
+    <div class="item">
+      <div class="label">OGP preview <span class="small">— preview/ogp-preview.html</span></div>
+      <div class="frame"><iframe src="preview/ogp-preview.html" height="780" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Tsunagu Project · Design System · 2026
+</footer>
+
+</body>
+</html>

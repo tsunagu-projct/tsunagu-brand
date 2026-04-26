@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Semantic colors</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin:0; padding:0; background:var(--bg); }
+  .card { box-sizing:border-box; padding:24px 28px; display:grid; grid-template-columns: repeat(4, 1fr); gap:14px; }
+  .pair {
+    border-radius: var(--r-md);
+    border: 1px solid var(--line-200);
+    overflow: hidden;
+    background: var(--washi-0);
+  }
+  .swatch { height: 60px; display:flex; align-items:flex-end; padding:8px 12px; font: 600 11px/1 var(--font-mono); color:#fff; letter-spacing:0.04em; }
+  .meta { padding: 10px 12px; font: 600 11px/1.2 var(--font-body); letter-spacing: var(--tr-eyebrow); text-transform: uppercase; color: var(--fg-3); display:flex; justify-content:space-between; }
+  .meta b { color: var(--fg-1); font-weight:700; letter-spacing:0; text-transform:none; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="pair"><div class="swatch" style="background:var(--ok-500)">success</div><div class="meta"><b>OK</b><span>500</span></div></div>
+  <div class="pair"><div class="swatch" style="background:var(--info-500)">info</div><div class="meta"><b>Info</b><span>500</span></div></div>
+  <div class="pair"><div class="swatch" style="background:var(--warn-500)">warning</div><div class="meta"><b>Warn</b><span>500</span></div></div>
+  <div class="pair"><div class="swatch" style="background:var(--danger-500)">danger</div><div class="meta"><b>Danger</b><span>500</span></div></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Buttons</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body { margin:0; padding:0; background:var(--bg); }
+  .card { box-sizing:border-box; padding:28px; display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+  .btn {
+    display:inline-flex; align-items:center; gap:8px;
+    font: 600 14px/1 var(--font-body);
+    padding: 12px 18px;
+    border-radius: var(--r-md);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background var(--dur-micro) var(--ease), opacity var(--dur-micro) var(--ease), transform var(--dur-micro) var(--ease);
+  }
+  .btn-primary { background: var(--ink-900); color: var(--washi-50); }
+  .btn-primary:hover { background: var(--ink-950); }
+  .btn-accent { background: var(--thread-500); color: var(--washi-0); }
+  .btn-accent:hover { background: var(--thread-700); }
+  .btn-ghost { background: transparent; color: var(--ink-900); border-color: var(--line-300); }
+  .btn-ghost:hover { background: var(--washi-100); }
+  .btn-link { background: transparent; color: var(--ink-900); padding: 12px 4px; }
+  .btn-link:hover { opacity: 0.85; }
+  .btn-sm { font-size:13px; padding: 8px 12px; }
+  .arrow { display:inline-block; transition: transform var(--dur-std) var(--ease); }
+  .btn:hover .arrow { transform: translateX(2px); }
+</style>
+</head>
+<body>
+<div class="card">
+  <button class="btn btn-primary">はじめる <span class="arrow">→</span></button>
+  <button class="btn btn-accent">Get started <span class="arrow">→</span></button>
+  <button class="btn btn-ghost">もっと読む</button>
+  <button class="btn btn-link">Learn more <span class="arrow">→</span></button>
+  <button class="btn btn-primary btn-sm">Sign in</button>
+  <button class="btn btn-ghost btn-sm">Cancel</button>
+</div>
+</body>
+</html>

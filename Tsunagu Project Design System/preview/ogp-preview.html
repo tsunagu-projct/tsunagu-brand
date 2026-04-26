@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>OGP preview — tsunagu-project181.com</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin:0; padding:0; background:var(--bg); }
+  .wrap { padding: 28px 32px; display:flex; flex-direction:column; gap: 28px; }
+  .head {
+    font: 600 11px/1 var(--font-body);
+    letter-spacing: var(--tr-eyebrow);
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .lead {
+    font: 400 13px/1.5 var(--font-body);
+    color: var(--fg-2);
+    margin: 0;
+    max-width: 580px;
+  }
+
+  /* Twitter / X card */
+  .x-card {
+    width: 520px;
+    border: 1px solid var(--line-200);
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--washi-0);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  .x-card .img {
+    aspect-ratio: 1.91/1;
+    background-image: url("../assets/cover-sea.jpeg");
+    background-size: cover; background-position: center;
+  }
+  .x-card .body { padding: 12px 16px; }
+  .x-card .domain { font-size: 13px; color: #536471; }
+  .x-card .title {
+    font-size: 15px; font-weight: 600; color: #0f1419;
+    line-height: 1.3; margin: 2px 0 4px 0;
+  }
+  .x-card .desc { font-size: 13px; color: #536471; line-height: 1.4; }
+
+  /* LinkedIn / FB */
+  .li-card {
+    width: 520px;
+    border: 1px solid var(--line-200);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  .li-card .img {
+    aspect-ratio: 1.91/1;
+    background-image: url("../assets/cover-sea.jpeg");
+    background-size: cover; background-position: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .li-card .body { padding: 12px 16px 14px; background: #f3f2ef; }
+  .li-card .title { font-size: 14px; font-weight: 600; color: #000; line-height: 1.35; margin: 0 0 4px 0; }
+  .li-card .domain { font-size: 12px; color: #666; text-transform: lowercase; }
+
+  /* iMessage / Slack — square thumb */
+  .sq-card {
+    width: 460px;
+    display: flex;
+    background: #fff;
+    border: 1px solid var(--line-200);
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+  .sq-card .img {
+    width: 120px; flex: none;
+    background-image: url("../assets/cover-sea.jpeg");
+    background-size: cover; background-position: center;
+  }
+  .sq-card .body { padding: 12px 14px; display:flex; flex-direction:column; justify-content:center; gap: 4px; }
+  .sq-card .title { font-size: 14px; font-weight: 600; color: #1a1a1a; line-height: 1.3; }
+  .sq-card .desc { font-size: 12px; color: #6b6b6b; line-height: 1.4; }
+  .sq-card .domain { font-size: 11px; color: #999; }
+
+  .col-2 { display:grid; grid-template-columns: auto auto; gap: 24px; align-items: start; }
+  .label { font: 600 11px var(--font-mono); color: var(--fg-3); margin-bottom: 8px; letter-spacing: 0.06em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div>
+    <div class="head">OGP プレビュー · SNSシェア時の見え方</div>
+    <p class="lead">リンクをSNSやチャットに貼ったとき、自動でこのカードが表示されます。タイトル・説明・画像・ドメインの4つが見える、いわば「URLの名刺」です。</p>
+  </div>
+
+  <div class="col-2">
+    <div>
+      <div class="label">X (Twitter)</div>
+      <div class="x-card">
+        <div class="img"></div>
+        <div class="body">
+          <div class="domain">tsunagu-project181.com</div>
+          <div class="title">違いを、力に。— つなぐProject</div>
+          <div class="desc">人と人、今と未来、AI と暮らしを「つなぐ」伴走者。多国籍チームで20年、PM の視点から綴る伴走ノート。</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="label">LinkedIn / Facebook</div>
+      <div class="li-card">
+        <div class="img"></div>
+        <div class="body">
+          <div class="title">違いを、力に。— つなぐProject</div>
+          <div class="domain">tsunagu-project181.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="label">iMessage / Slack / LINE</div>
+    <div class="sq-card">
+      <div class="img"></div>
+      <div class="body">
+        <div class="title">違いを、力に。— つなぐProject</div>
+        <div class="desc">人と人、今と未来、AI と暮らしを「つなぐ」伴走者。</div>
+        <div class="domain">tsunagu-project181.com</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

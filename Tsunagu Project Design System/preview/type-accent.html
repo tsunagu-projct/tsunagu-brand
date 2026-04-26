@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Serif & mono</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body { margin:0; padding:0; background:var(--bg); }
+  .card { box-sizing:border-box; padding:24px 28px; display:grid; grid-template-columns: 1.4fr 1fr; gap: 28px; align-items:center; }
+  h4 { margin: 0 0 10px 0; font: 600 11px/1 var(--font-body); letter-spacing: var(--tr-eyebrow); text-transform:uppercase; color: var(--accent); }
+  .quote { font-family: var(--font-serif); font-weight: 400; font-size: 22px; line-height: 1.45; color: var(--fg-1); margin: 0; }
+  .quote em { color: var(--accent); font-style: normal; font-weight:600; }
+  .mono-block {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    line-height: 1.5;
+    background: var(--ink-900);
+    color: var(--washi-50);
+    border-radius: var(--r-md);
+    padding: 14px 16px;
+    border: 1px solid var(--ink-900);
+  }
+  .mono-block .c { color: var(--thread-300); }
+  .mono-block .k { color: #a9b3c8; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div>
+    <h4>Serif accent · Noto Serif JP / Source Serif</h4>
+    <p class="quote">「<em>つなぐ</em>」は、人と人、過去と未来、自分と世界。<br/><span style="color:var(--fg-3)">Tsunagu — to tie together.</span></p>
+  </div>
+  <div>
+    <h4>Mono · JetBrains Mono</h4>
+    <pre class="mono-block"><span class="c">// tokens</span>
+<span class="k">--ink-900</span>: #0e1730;
+<span class="k">--thread-500</span>: #d96b2c;</pre>
+  </div>
+</div>
+</body>
+</html>

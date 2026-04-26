@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Brand mark</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  .card { box-sizing: border-box; padding: 22px 26px; display: flex; gap: 14px; align-items: stretch; }
+  .col { display:flex; flex-direction:column; flex:1; }
+  .tile {
+    flex: 1;
+    border: 1px solid var(--line-200);
+    border-radius: var(--r-md);
+    background: var(--washi-0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    min-height: 130px;
+    overflow: hidden;
+  }
+  .tile.washi { background: var(--washi-100); }
+  .tile.dark  { background: var(--ink-900); border-color: var(--ink-900); }
+  .crop {
+    width: 110px; height: 110px; border-radius: 0;
+    background-image: url("../assets/logo-mark.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .tile.dark .crop { filter: invert(1); }
+  .caption {
+    margin-top: 8px;
+    font: 600 11px/1.4 var(--font-body);
+    letter-spacing: var(--tr-eyebrow);
+    text-transform: uppercase;
+    color: var(--fg-3);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="col">
+    <div class="tile"><div class="crop"></div></div>
+    <div class="caption">On washi</div>
+  </div>
+  <div class="col">
+    <div class="tile washi"><div class="crop"></div></div>
+    <div class="caption">On paper</div>
+  </div>
+  <div class="col">
+    <div class="tile dark"><div class="crop"></div></div>
+    <div class="caption">On ink (inverted)</div>
+  </div>
+</div>
+</body>
+</html>

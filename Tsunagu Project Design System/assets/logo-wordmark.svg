@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none">
+  <g stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <circle cx="14" cy="44" r="5" fill="currentColor" stroke="none"></circle>
+    <circle cx="50" cy="20" r="5"></circle>
+    <path d="M14 44 C 26 44, 38 20, 50 20" stroke-width="2"></path>
+  </g>
+  <text x="76" y="42" fill="currentColor" font-family="Inter Tight, Inter, system-ui, sans-serif" font-weight="700" font-size="26" letter-spacing="-0.5">
+    Tsunagu
+  </text>
+  <text x="200" y="42" fill="currentColor" opacity="0.55" font-family="Inter Tight, Inter, system-ui, sans-serif" font-weight="500" font-size="26" letter-spacing="-0.2">
+    Project
+  </text>
+</svg>

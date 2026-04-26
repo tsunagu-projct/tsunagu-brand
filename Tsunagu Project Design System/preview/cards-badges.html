@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cards & badges</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body { margin:0; padding:0; background:var(--bg); }
+  .wrap { box-sizing:border-box; padding:24px 28px; display:grid; grid-template-columns: 1.2fr 1fr; gap: 18px; align-items:stretch; }
+  .card {
+    background: var(--washi-0);
+    border: 1px solid var(--line-200);
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow-sm);
+    padding: 18px 20px;
+    display:flex; flex-direction:column; gap:10px;
+  }
+  .eyebrow { font: 600 11px/1 var(--font-body); letter-spacing: var(--tr-eyebrow); text-transform:uppercase; color: var(--accent); }
+  .title { font-family: var(--font-display); font-weight: 700; font-size: 18px; color: var(--fg-1); margin:0; line-height:1.2; }
+  .body { font-size: 13px; color: var(--fg-2); margin:0; line-height:1.5; }
+  .meta { font: 500 11px/1.2 var(--font-mono); color: var(--fg-3); margin-top:auto; }
+  .badges { display:flex; flex-wrap:wrap; gap:6px; }
+  .badge {
+    font: 600 10px/1 var(--font-body); letter-spacing:0.04em;
+    padding: 5px 9px; border-radius: var(--r-full);
+  }
+  .b-ink { background: var(--ink-900); color: var(--washi-50); }
+  .b-thread { background: var(--thread-50); color: var(--thread-700); }
+  .b-line { background: transparent; border:1px solid var(--line-300); color: var(--fg-2); }
+  .b-ok { background: var(--ok-50); color: var(--ok-500); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <span class="eyebrow">伴走ノート · Companion notes</span>
+    <h3 class="title">違いを、力に変える3つの問い</h3>
+    <p class="body">多国籍チームで20年。AIに任せるところ、人が握るところ。明日のために、今日できる小さな一歩。</p>
+    <div class="meta">2026.04 · 5 min read</div>
+  </div>
+  <div class="card" style="gap:14px">
+    <span class="eyebrow">Badges</span>
+    <div class="badges">
+      <span class="badge b-ink">伴走中</span>
+      <span class="badge b-thread">AI活用</span>
+      <span class="badge b-line">Career</span>
+      <span class="badge b-ok">● Active</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

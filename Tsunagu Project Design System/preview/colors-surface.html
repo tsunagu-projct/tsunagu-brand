@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Surface & ink colors</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin:0; padding:0; background:var(--bg); }
+  .card { box-sizing:border-box; padding:24px 28px; }
+  .row { display:grid; grid-template-columns: repeat(7, 1fr); gap:8px; }
+  .swatch { aspect-ratio: 1/1.05; border-radius: var(--r-md); border:1px solid var(--line-200); position:relative; overflow:hidden; }
+  .swatch .meta {
+    position:absolute; inset:auto 0 0 0; padding:6px 8px; font: 600 10px/1.2 var(--font-mono);
+    color: var(--fg-on-ink); background: rgba(0,0,0,0.18);
+    letter-spacing:0.04em;
+  }
+  .swatch.light .meta { color: var(--sumi-900); background: rgba(255,255,255,0.55); }
+  .head { font: 600 var(--fs-12)/1 var(--font-body); letter-spacing: var(--tr-eyebrow); text-transform: uppercase; color: var(--accent); margin: 0 0 12px 0; }
+  .group { margin-bottom: 14px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="group">
+    <div class="head">Washi · paper surfaces</div>
+    <div class="row">
+      <div class="swatch light" style="background:var(--washi-0)"><div class="meta">0</div></div>
+      <div class="swatch light" style="background:var(--washi-50)"><div class="meta">50 ★</div></div>
+      <div class="swatch light" style="background:var(--washi-100)"><div class="meta">100</div></div>
+      <div class="swatch light" style="background:var(--washi-200)"><div class="meta">200</div></div>
+      <div class="swatch light" style="background:var(--line-100)"><div class="meta">line-100</div></div>
+      <div class="swatch light" style="background:var(--line-200)"><div class="meta">line-200</div></div>
+      <div class="swatch light" style="background:var(--line-300)"><div class="meta">line-300</div></div>
+    </div>
+  </div>
+  <div class="group">
+    <div class="head">Sumi · ink for type</div>
+    <div class="row">
+      <div class="swatch light" style="background:var(--sumi-100)"><div class="meta">100</div></div>
+      <div class="swatch light" style="background:var(--sumi-300)"><div class="meta">300</div></div>
+      <div class="swatch" style="background:var(--sumi-500)"><div class="meta">500</div></div>
+      <div class="swatch" style="background:var(--sumi-700)"><div class="meta">700</div></div>
+      <div class="swatch" style="background:var(--sumi-900)"><div class="meta">900 ★</div></div>
+      <div class="swatch light" style="background:var(--washi-100); border-style:dashed"><div class="meta" style="color:var(--fg-3)">—</div></div>
+      <div class="swatch light" style="background:var(--washi-100); border-style:dashed"><div class="meta" style="color:var(--fg-3)">—</div></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

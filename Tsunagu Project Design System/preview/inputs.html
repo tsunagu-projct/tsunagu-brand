@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Inputs</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body { margin:0; padding:0; background:var(--bg); }
+  .card { box-sizing:border-box; padding:24px 28px; display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  label { display:block; font: 600 11px/1.2 var(--font-body); letter-spacing: var(--tr-eyebrow); text-transform:uppercase; color: var(--fg-3); margin-bottom: 6px; }
+  .input, select, textarea {
+    width:100%; box-sizing:border-box;
+    font: 400 14px/1.4 var(--font-body); color: var(--fg-1);
+    background: var(--washi-0);
+    border: 1px solid var(--line-300);
+    border-radius: var(--r-md);
+    padding: 10px 12px;
+    transition: box-shadow var(--dur-micro) var(--ease), border-color var(--dur-micro) var(--ease);
+  }
+  .input:focus, select:focus, textarea:focus {
+    outline:none; border-color: var(--thread-500);
+    box-shadow: 0 0 0 3px rgba(217,107,44,0.18);
+  }
+  .check { display:flex; gap:8px; align-items:center; font: 500 14px var(--font-body); color: var(--fg-2); }
+  .check input { accent-color: var(--ink-900); }
+  .row { display:flex; gap: 10px; align-items:center; }
+  .pill {
+    display:inline-flex; align-items:center; gap:6px;
+    padding: 4px 10px; border-radius: var(--r-full);
+    font: 600 11px/1 var(--font-body);
+    background: var(--thread-50); color: var(--thread-700);
+    letter-spacing:0.04em;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div>
+    <label>名前 / Name</label>
+    <input class="input" value="つなぐ プロジェクト">
+  </div>
+  <div>
+    <label>Email</label>
+    <input class="input" placeholder="you@tsunagu.jp">
+  </div>
+  <div>
+    <label>Topic</label>
+    <select>
+      <option>AI活用</option>
+      <option>ライフプラン</option>
+      <option>キャリア</option>
+    </select>
+  </div>
+  <div class="row" style="align-self:end">
+    <span class="pill">● 伴走中</span>
+    <label class="check"><input type="checkbox" checked> Subscribe</label>
+  </div>
+</div>
+</body>
+</html>

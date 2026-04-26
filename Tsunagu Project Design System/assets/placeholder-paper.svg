@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#f7f5f0"></rect>
+  
+  <g opacity="0.9">
+    <rect x="80" y="120" width="360" height="420" fill="#ffffff" stroke="#ddd7c9"></rect>
+    <rect x="320" y="60" width="380" height="440" fill="#efece4" stroke="#ddd7c9"></rect>
+  </g>
+  <g stroke="#d96b2c" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M120 480 C 280 360, 460 540, 660 380"></path>
+    <circle cx="120" cy="480" r="5" fill="#d96b2c"></circle>
+    <circle cx="660" cy="380" r="5" fill="none" stroke-width="2"></circle>
+  </g>
+  <text x="400" y="300" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#9a9287" letter-spacing="2">
+    PHOTOGRAPHY · PLACEHOLDER
+  </text>
+</svg>

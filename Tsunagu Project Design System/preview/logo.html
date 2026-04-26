@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Logo lockup</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  .card { box-sizing: border-box; padding: 22px 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .col { display:flex; flex-direction:column; }
+  .tile {
+    border: 1px solid var(--line-200);
+    border-radius: var(--r-md);
+    background: var(--washi-0);
+    display: flex; align-items: center; justify-content: flex-start;
+    padding: 22px 28px;
+    min-height: 120px;
+    gap: 18px;
+  }
+  .tile.dark { background: var(--ink-900); border-color: var(--ink-900); }
+  .mark {
+    flex: none;
+    width: 84px; height: 84px;
+    background-image: url("../assets/logo-mark.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .tile.dark .mark { filter: invert(1); }
+  .text { display: flex; flex-direction: column; gap: 2px; }
+  .text .jp {
+    font-family: var(--font-display-jp);
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.05;
+    color: var(--ink-900);
+    letter-spacing: 0;
+  }
+  .text .en {
+    font-family: var(--font-display-en);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.05;
+    color: var(--ink-900);
+    letter-spacing: -0.015em;
+  }
+  .text .tag {
+    margin-top: 4px;
+    font: 600 10px/1.2 var(--font-mono);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--fg-3);
+  }
+  .tile.dark .text .jp,
+  .tile.dark .text .en { color: var(--washi-50); }
+  .tile.dark .text .tag { color: var(--ink-200); }
+  .label {
+    margin-top: 8px;
+    font: 600 11px/1.4 var(--font-body);
+    letter-spacing: var(--tr-eyebrow);
+    text-transform: uppercase;
+    color: var(--fg-3);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="col">
+    <div class="tile">
+      <div class="mark"></div>
+      <div class="text">
+        <span class="jp">つなぐProject</span>
+        <span class="tag">Connecting · People · Tomorrow</span>
+      </div>
+    </div>
+    <div class="label">Lockup · light · JP primary</div>
+  </div>
+  <div class="col">
+    <div class="tile dark">
+      <div class="mark"></div>
+      <div class="text">
+        <span class="en">Tsunagu Project</span>
+        <span class="tag">伴走 · COMPANION · MENTOR</span>
+      </div>
+    </div>
+    <div class="label">Lockup · dark · EN primary</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Iconography</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  html,body { margin:0; padding:0; background:var(--bg); }
+  .card {
+    box-sizing:border-box; padding:20px 24px;
+    display:grid; grid-template-columns: 1.25fr 1fr; gap: 22px;
+    align-items: stretch;
+  }
+  .panel { display:flex; flex-direction:column; gap: 10px; }
+  .head {
+    font: 600 11px/1 var(--font-body);
+    letter-spacing: var(--tr-eyebrow);
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .sub { font: 500 12px/1.4 var(--font-body); color: var(--fg-3); margin: 0; }
+
+  /* Lucide grid */
+  .grid { display:grid; grid-template-columns: repeat(8, 1fr); gap: 6px; margin-top: 4px; }
+  .icon-tile {
+    aspect-ratio: 1/1;
+    display:flex; align-items:center; justify-content:center;
+    background: var(--washi-0);
+    border:1px solid var(--line-200);
+    border-radius: var(--r-sm);
+    color: var(--ink-900);
+  }
+  .icon-tile svg { width: 18px; height: 18px; stroke-width: 1.75; }
+
+  /* Brand mark size scale */
+  .scale-row {
+    display:flex; align-items:flex-end; gap: 14px; padding: 8px 0 4px;
+  }
+  .scale-row .item { display:flex; flex-direction:column; align-items:center; gap:6px; }
+  .mark {
+    background-image: url("../assets/logo-mark.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    flex: none;
+  }
+  .m-16 { width: 16px; height: 16px; }
+  .m-24 { width: 24px; height: 24px; }
+  .m-32 { width: 32px; height: 32px; }
+  .m-48 { width: 48px; height: 48px; }
+  .px {
+    font: 600 9px/1 var(--font-mono);
+    color: var(--fg-3);
+    letter-spacing: 0.06em;
+  }
+
+  /* Usage examples — favicon, avatar, button */
+  .uses { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .browser-pill {
+    display:inline-flex; align-items:center; gap:8px;
+    height: 28px; padding: 0 12px 0 8px;
+    border-radius: var(--r-full);
+    background: var(--washi-0);
+    border: 1px solid var(--line-200);
+    font: 500 11px var(--font-body); color: var(--fg-2);
+  }
+  .browser-pill .mark { width: 14px; height: 14px; }
+  .avatar {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: var(--washi-100);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .avatar .mark { width: 22px; height: 22px; }
+  .ibtn {
+    display:inline-flex; align-items:center; gap:6px;
+    height: 28px; padding: 0 12px;
+    border-radius: var(--r-md);
+    background: var(--ink-900); color: var(--washi-50);
+    font: 600 11px var(--font-body);
+  }
+  .ibtn .mark { width: 14px; height: 14px; filter: invert(1); }
+  .caption {
+    font: 500 9px/1 var(--font-mono);
+    color: var(--fg-3); letter-spacing: 0.06em;
+    margin-top: 4px; text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="panel">
+    <span class="head">Lucide · 1.75px stroke · 18–24px</span>
+    <p class="sub">Use Lucide for all functional icons. Match weight; never mix icon sets.</p>
+    <div class="grid">
+      <div class="icon-tile"><i data-lucide="link"></i></div>
+      <div class="icon-tile"><i data-lucide="users"></i></div>
+      <div class="icon-tile"><i data-lucide="compass"></i></div>
+      <div class="icon-tile"><i data-lucide="sparkles"></i></div>
+      <div class="icon-tile"><i data-lucide="map"></i></div>
+      <div class="icon-tile"><i data-lucide="message-circle"></i></div>
+      <div class="icon-tile"><i data-lucide="calendar"></i></div>
+      <div class="icon-tile"><i data-lucide="search"></i></div>
+      <div class="icon-tile"><i data-lucide="bookmark"></i></div>
+      <div class="icon-tile"><i data-lucide="heart"></i></div>
+      <div class="icon-tile"><i data-lucide="settings"></i></div>
+      <div class="icon-tile"><i data-lucide="arrow-right"></i></div>
+      <div class="icon-tile"><i data-lucide="globe"></i></div>
+      <div class="icon-tile"><i data-lucide="briefcase"></i></div>
+      <div class="icon-tile"><i data-lucide="lightbulb"></i></div>
+      <div class="icon-tile"><i data-lucide="bot"></i></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <span class="head">Brand mark · ミニサイズ展開</span>
+    <p class="sub">Favicon, avatar, button glyph. Smallest legible: 16px.</p>
+    <div class="scale-row">
+      <div class="item"><div class="mark m-16"></div><span class="px">16</span></div>
+      <div class="item"><div class="mark m-24"></div><span class="px">24</span></div>
+      <div class="item"><div class="mark m-32"></div><span class="px">32</span></div>
+      <div class="item"><div class="mark m-48"></div><span class="px">48</span></div>
+    </div>
+    <div class="uses">
+      <div>
+        <span class="browser-pill"><span class="mark"></span>tsunagu.jp</span>
+        <div class="caption">Favicon</div>
+      </div>
+      <div>
+        <span class="avatar"><span class="mark"></span></span>
+        <div class="caption">Avatar</div>
+      </div>
+      <div>
+        <span class="ibtn"><span class="mark"></span>つなぐ</span>
+        <div class="caption">Button glyph</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>
