@@ -1,0 +1,266 @@
+/* ============================================================
+   Tsunagu Project — design tokens
+   Bilingual (JP/EN). Modern, tech-forward, crisp, editorial.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Zen+Kaku+Gothic+New:wght@500;700;900&family=JetBrains+Mono:wght@400;600&display=swap");
+
+:root {
+  /* ---------- Color: brand ---------- */
+  --ink-50:  #ececec;
+  --ink-100: #cfcfcf;
+  --ink-200: #a3a3a3;
+  --ink-400: #5e5e5e;
+  --ink-700: #1f1f1f;
+  --ink-900: #0c0c0c;   /* primary brand — 墨 sumi (matches logo ink) */
+  --ink-950: #000000;
+
+  --thread-50:  #eef5f8;
+  --thread-100: #e0ecf2;   /* tint — backgrounds, hover */
+  --thread-300: #a6c4d3;   /* mid — chips, soft surfaces */
+  --thread-500: #6a9bb5;   /* ★ accent — buttons, links */
+  --thread-700: #3f6e8a;
+  --thread-900: #1f3e51;
+
+  /* ---------- Color: surface (washi paper) ---------- */
+  --washi-0:   #ffffff;
+  --washi-50:  #f7f5f0;   /* default page background */
+  --washi-100: #efece4;
+  --washi-200: #e4e0d4;
+
+  /* ---------- Color: text (sumi ink) ---------- */
+  --sumi-900: #14110e;    /* body */
+  --sumi-700: #3b362f;
+  --sumi-500: #6b6359;
+  --sumi-300: #9a9287;
+  --sumi-100: #cac3b6;
+
+  /* ---------- Color: lines ---------- */
+  --line-100: #ece8df;
+  --line-200: #ddd7c9;
+  --line-300: #c2bba9;
+
+  /* ---------- Color: semantic (low-saturation) ---------- */
+  --ok-500:     #3a7a5a;
+  --ok-50:      #e8f1ec;
+  --warn-500:   #b07a1f;
+  --warn-50:    #f6ecd6;
+  --danger-500: #a8392b;
+  --danger-50:  #f3dcd6;
+  --info-500:   #2f5b8a;
+  --info-50:    #dbe5f0;
+
+  /* ---------- Aliases (foreground/background) ---------- */
+  --bg:           var(--washi-50);
+  --bg-elevated:  var(--washi-0);
+  --fg-1:         var(--sumi-900);
+  --fg-2:         var(--sumi-700);
+  --fg-3:         var(--sumi-500);
+  --fg-muted:     var(--sumi-300);
+  --fg-on-ink:    var(--washi-50);
+  --brand:        var(--ink-900);
+  --accent:       var(--thread-500);
+  --line:         var(--line-200);
+
+  /* ---------- Type families ---------- */
+  --font-display-jp: "Meiryo UI", "Meiryo", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+  --font-display-en: "Meiryo UI", "Meiryo", "Inter Tight", "Inter", system-ui, -apple-system, sans-serif;
+  --font-body-jp:    "Meiryo UI", "Meiryo", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --font-body-en:    "Meiryo UI", "Meiryo", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif-jp:   "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-serif-en:   "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --font-mono:       "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Default stack — bilingual: EN renders Inter; JP renders Noto Sans JP */
+  --font-body:    var(--font-body-en), var(--font-body-jp);
+  --font-display: var(--font-display-en), var(--font-display-jp);
+  --font-serif:   var(--font-serif-en), var(--font-serif-jp);
+
+  /* ---------- Type scale (1.250 — major third) ---------- */
+  --fs-12: 0.75rem;     /* 12 */
+  --fs-14: 0.875rem;    /* 14 */
+  --fs-16: 1rem;        /* 16 — body */
+  --fs-18: 1.125rem;    /* 18 */
+  --fs-20: 1.25rem;     /* 20 */
+  --fs-24: 1.5rem;      /* 24 — h4 */
+  --fs-30: 1.875rem;    /* 30 — h3 */
+  --fs-38: 2.375rem;    /* 38 — h2 */
+  --fs-48: 3rem;        /* 48 — h1 */
+  --fs-64: 4rem;        /* 64 — display */
+  --fs-80: 5rem;        /* 80 — hero */
+
+  /* Line-heights tuned for JP+EN mix */
+  --lh-tight:  1.18;
+  --lh-snug:   1.32;
+  --lh-normal: 1.6;     /* JP body needs more */
+  --lh-loose:  1.85;
+
+  /* Letter-spacing — JP gets near-zero, EN display gets slight tightening */
+  --tr-display: -0.015em;
+  --tr-body:    0;
+  --tr-eyebrow: 0.08em;
+
+  /* ---------- Spacing (4px base) ---------- */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  24px;
+  --sp-6:  32px;
+  --sp-7:  48px;
+  --sp-8:  64px;
+  --sp-9:  96px;
+  --sp-10: 128px;
+
+  /* ---------- Radii ---------- */
+  --r-sm:   4px;
+  --r-md:   8px;
+  --r-lg:   16px;
+  --r-xl:   24px;
+  --r-full: 9999px;
+
+  /* ---------- Borders ---------- */
+  --bw-hair: 1px;
+  --bw-bold: 2px;
+
+  /* ---------- Shadows (warm, low-blur) ---------- */
+  --shadow-sm: 0 1px 2px rgba(20, 17, 14, 0.05),
+               0 1px 1px rgba(20, 17, 14, 0.04);
+  --shadow-md: 0 4px 8px rgba(20, 17, 14, 0.06),
+               0 2px 3px rgba(20, 17, 14, 0.05);
+  --shadow-lg: 0 16px 32px rgba(20, 17, 14, 0.10),
+               0 4px 8px rgba(20, 17, 14, 0.06);
+  --shadow-inner-focus: inset 0 0 0 2px var(--thread-500);
+
+  /* ---------- Motion ---------- */
+  --ease:        cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-micro:   180ms;
+  --dur-std:     320ms;
+  --dur-hero:    600ms;
+
+  /* ---------- Layout ---------- */
+  --container:   1180px;
+  --reading:     680px;
+  --header-h:    64px;
+}
+
+/* ============================================================
+   Semantic element styles
+   ============================================================ */
+
+html { background: var(--bg); color: var(--fg-1); }
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-16);
+  line-height: var(--lh-normal);
+  letter-spacing: var(--tr-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-48);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tr-display);
+  color: var(--fg-1);
+}
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-38);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tr-display);
+}
+h3, .h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-30);
+  line-height: var(--lh-snug);
+}
+h4, .h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-24);
+  line-height: var(--lh-snug);
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-80);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--fs-12);
+  letter-spacing: var(--tr-eyebrow);
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+p, .p {
+  font-size: var(--fs-16);
+  line-height: var(--lh-normal);
+  color: var(--fg-2);
+  text-wrap: pretty;
+}
+.lead {
+  font-size: var(--fs-20);
+  line-height: var(--lh-normal);
+  color: var(--fg-1);
+}
+.small  { font-size: var(--fs-14); }
+.micro  { font-size: var(--fs-12); color: var(--fg-3); }
+
+.serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: var(--lh-loose);
+}
+.quote {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: var(--fs-30);
+  line-height: 1.5;
+  color: var(--fg-1);
+}
+
+code, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--washi-100);
+  border: 1px solid var(--line-100);
+  border-radius: var(--r-sm);
+  padding: 1px 6px;
+}
+
+a {
+  color: var(--ink-900);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--line-300);
+  transition: opacity var(--dur-micro) var(--ease),
+              text-decoration-color var(--dur-micro) var(--ease);
+}
+a:hover { opacity: 0.85; text-decoration-color: var(--accent); }
+
+::selection { background: var(--thread-300); color: var(--ink-900); }
+
+:focus-visible {
+  outline: 2px solid var(--thread-500);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line-200);
+  margin: var(--sp-7) 0;
+}
