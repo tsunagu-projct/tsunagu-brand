@@ -43,7 +43,7 @@ body {
 }
 .tp-bar__mark {
   width: 32px; height: 32px;
-  background: url("assets/logo-mark.jpeg") center/contain no-repeat;
+  background: url("../assets/logo-mark.jpeg") center/contain no-repeat;
   border-radius: 50%;
 }
 .tp-bar__name {
@@ -577,7 +577,7 @@ body {
 }
 .tp-footer__mark {
   width: 40px; height: 40px;
-  background: url("assets/logo-mark.jpeg") center/contain no-repeat;
+  background: url("../assets/logo-mark.jpeg") center/contain no-repeat;
   border-radius: 50%;
 }
 .tp-footer__name {
