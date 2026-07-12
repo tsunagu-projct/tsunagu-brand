@@ -115,14 +115,14 @@
 
     <div class="tp-about">
       <div class="tp-about__copy">
-        <p>ファイナンス領域のITプロジェクトマネジメントを軸に、AIを使った業務設計、個人のライフプラン相談、多国籍チームのファシリテーションを行っています。</p>
-        <p>言語、文化、世代、専門性。<b>「違い」は、ぶつかれば摩擦になるけれど、つなげば新しい力になる</b>。10年以上、その「あいだ」に立ち続けてきました。</p>
+        <p>ファイナンス領域のITプロジェクトマネジメントを軸に、AIを使った業務設計、個人のライフプラン相談、20か国以上のメンバーが集う多国籍チームのファシリテーションを行っています。</p>
+        <p>言語、文化、世代、専門性。<b>「違い」は、ぶつかれば摩擦になるけれど、つなげば新しい力になる</b>。30年以上、その「あいだ」に立ち続けてきました。</p>
         <p>このサイトは、私が考えていること、書いていること、これから一緒にできることをまとめた場所です。気になったら、気軽に声をかけてください。</p>
       </div>
 
       <div class="tp-about__facts">
-        <div class="tp-fact"><span class="tp-fact__label">Years</span><span class="tp-fact__value">10+</span><span class="tp-fact__sub">PM・コンサル経験</span></div>
-        <div class="tp-fact"><span class="tp-fact__label">Languages</span><span class="tp-fact__value">JP · EN</span><span class="tp-fact__sub">バイリンガル業務</span></div>
+        <div class="tp-fact"><span class="tp-fact__label">Years</span><span class="tp-fact__value">30+</span><span class="tp-fact__sub">金融IT PM経験</span></div>
+        <div class="tp-fact"><span class="tp-fact__label">Team</span><span class="tp-fact__value">20+ ヶ国</span><span class="tp-fact__sub">多国籍ファシリ実績</span></div>
         <div class="tp-fact"><span class="tp-fact__label">Domains</span><span class="tp-fact__value">Finance IT</span><span class="tp-fact__sub">/ AI / Life Plan</span></div>
         <div class="tp-fact"><span class="tp-fact__label">Mode</span><span class="tp-fact__value">Remote-first</span><span class="tp-fact__sub">海外案件も対応</span></div>
       </div>
@@ -164,9 +164,9 @@
         <div class="tp-srv__num">03</div>
         <span class="tp-srv__tag">Life Plan</span>
         <h3 class="tp-srv__title">今と未来をつなぐ</h3>
-        <span class="tp-srv__title-en">Personal life-plan consultation</span>
-        <p class="tp-srv__body">30代・40代のライフプラン相談。家計、住宅、教育、老後、海外。数字とシナリオで「これから20年」を描く。</p>
-        <div class="tp-srv__keywords"><span class="tp-srv__kw">FP</span><span class="tp-srv__kw">資産設計</span><span class="tp-srv__kw">海外移住</span></div>
+        <span class="tp-srv__title-en">50代・60代の転機設計を、当事者の視点で。</span>
+        <p class="tp-srv__body">嘱託移行、退職金、iDeCo、セカンドキャリア——<b>いま自分自身が歩いている道</b>だからこそ、机上でない伴走ができます。日々20代・30代と働く現場感覚も持ち、世代を超えた視点で、あなたの「次」を一緒に設計します。</p>
+        <div class="tp-srv__keywords"><span class="tp-srv__kw">転機設計</span><span class="tp-srv__kw">セカンドキャリア</span><span class="tp-srv__kw">世代をつなぐ</span></div>
       </article>
     </div>
   </div>
@@ -246,21 +246,38 @@
 <script src="note_feed/demo-data.js"></script>
 <script type="text/babel" src="note_feed/NoteFeed.jsx"></script>
 <script type="text/babel">
-  ReactDOM.createRoot(document.getElementById('note-feed-mount')).render(
-    <NoteFeed.Section
-      articles={window.NOTE_FEED_DEMO}
-      variant="cards"
-      count={3}
-      showThumb={true}
-      showExcerpt={true}
-      eyebrow=""
-      title=""
-      sub=""
-      ctaLabel="noteで全記事を読む"
-      ctaHref="https://note.com/tsunagu_proj181"
-      readLabel="読む"
-    />
-  );
+  // 03 / Notes — note最新記事の自動表示
+  // 方式B: 同一ドメインの notes.json（GitHub Actionsが毎朝JST 6時に生成）を読む。
+  //        CORS問題が発生せず、note側の障害にも影響されない。
+  //        取得失敗時は demo-data.js にフォールバックしてレイアウトを保つ。
+  const NOTE_MOUNT = document.getElementById('note-feed-mount');
+  const NOTE_FALLBACK = window.NOTE_FEED_DEMO;
+
+  function renderNoteFeed(articles) {
+    ReactDOM.createRoot(NOTE_MOUNT).render(
+      <NoteFeed.Section
+        articles={articles}
+        variant="cards"
+        count={3}
+        showThumb={true}
+        showExcerpt={true}
+        eyebrow=""
+        title=""
+        sub=""
+        ctaLabel="noteで全記事を読む"
+        ctaHref="https://note.com/tsunagu_proj181"
+        readLabel="読む"
+      />
+    );
+  }
+
+  fetch('notes.json', { cache: 'no-cache' })
+    .then((r) => { if (!r.ok) throw new Error('notes.json ' + r.status); return r.json(); })
+    .then((data) => {
+      const arts = Array.isArray(data) ? data : (data.articles || []);
+      renderNoteFeed(arts.length ? arts : NOTE_FALLBACK);
+    })
+    .catch(() => renderNoteFeed(NOTE_FALLBACK));
 </script>
 </body>
 </html>
