@@ -44,11 +44,14 @@ async function main() {
     const pub = pick(b, 'pubDate');
     const date = pub && !isNaN(Date.parse(pub)) ? new Date(pub).toISOString().slice(0, 10) : '';
 
-    // media:thumbnail url="..." （note のRSSはこの形でサムネイルを持つ）
-    const thumb =
+    // note のRSSは <media:thumbnail>URL</media:thumbnail>（タグの中身＝テキスト）でサムネイルを持つ。
+    // 念のため url="..." 属性形式・<enclosure url="..."> もフォールバックで拾う。
+    const thumb = (
+      (b.match(/<media:thumbnail[^>]*>([\s\S]*?)<\/media:thumbnail>/i) || [])[1] ||
       (b.match(/<media:thumbnail[^>]*\burl="([^"]+)"/i) || [])[1] ||
       (b.match(/<enclosure[^>]*\burl="([^"]+)"/i) || [])[1] ||
-      '';
+      ''
+    ).trim();
 
     const rawExcerpt = stripTags(pick(b, 'description'));
     const excerpt = rawExcerpt.length > 80 ? rawExcerpt.slice(0, 80) + '…' : rawExcerpt;
