@@ -1,6 +1,16 @@
 [
   {
     "id": "n0",
+    "title": "そのノートは、誰が開くのか",
+    "excerpt": "エンディングノートを、久しぶりに開いた。ずいぶん前に買って、思い出したときだけ書き足してきた一冊。続きをみる",
+    "url": "https://note.com/tsunagu_proj181/n/n039775804d13",
+    "date": "2026-08-02",
+    "tag": "note",
+    "image": "https://assets.st-note.com/production/uploads/images/299840596/rectangle_large_type_2_02e89c86a6be1c518d74639a604560fa.png?width=800",
+    "readingMin": null
+  },
+  {
+    "id": "n1",
     "title": "壊れたのか、光っているだけか",
     "excerpt": "土曜の夜。数週間考えてきた計画に、決着をつけた。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/n65b4e55a6554",
@@ -10,7 +20,7 @@
     "readingMin": null
   },
   {
-    "id": "n1",
+    "id": "n2",
     "title": "気づくことと、引き受けることは違う。",
     "excerpt": "問題が、見えてしまう。会議で、資料で、仕組みの隙間で。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/n7ff3f04f300d",
@@ -20,7 +30,7 @@
     "readingMin": null
   },
   {
-    "id": "n2",
+    "id": "n3",
     "title": "なぜ、AIをひとつ減らしたのか",
     "excerpt": "私の手元では、3つのAIが働いていた。Claude、ChatGPT、Gemini。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/nd04bb1e447bd",
@@ -30,7 +40,7 @@
     "readingMin": null
   },
   {
-    "id": "n3",
+    "id": "n4",
     "title": "AIに任せたのに、なぜ時間が足りないのか",
     "excerpt": "本格的にAIに仕事を任せるようになって、数ヶ月。便利になった。それは間違いない。ただ、想定していなかったことが、ひとつある。頭が、休まらない。一時的に仕事の密度…",
     "url": "https://note.com/tsunagu_proj181/n/n53c6c0ab7e52",
@@ -40,23 +50,13 @@
     "readingMin": null
   },
   {
-    "id": "n4",
+    "id": "n5",
     "title": "なぜ、その広告で財布を開いたのか",
     "excerpt": "Instagramの広告で、センサーライトを買った。商品は届き、意外なほど役に立っている。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/ncc73fd8a317c",
     "date": "2026-07-04",
     "tag": "note",
     "image": "https://assets.st-note.com/production/uploads/images/291455841/rectangle_large_type_2_74945a0545b4770664f8dec8ceae0b1a.png?width=800",
-    "readingMin": null
-  },
-  {
-    "id": "n5",
-    "title": "全部やらなければ、を手放した日",
-    "excerpt": "長く所属してきた組織で、公式には社員ではなくなる日が近くなり、ある手続きを終えた。続きをみる",
-    "url": "https://note.com/tsunagu_proj181/n/nef79b2f4be21",
-    "date": "2026-06-28",
-    "tag": "note",
-    "image": "https://assets.st-note.com/production/uploads/images/289502089/rectangle_large_type_2_6f0517f37427c4da3857aec93b94d525.png?width=800",
     "readingMin": null
   }
 ]
