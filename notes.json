@@ -1,6 +1,16 @@
 [
   {
     "id": "n0",
+    "title": "「外向きの成果物を置かない週」に、内側で進んでいた準備",
+    "excerpt": "■すぐに何かを始めない一週間ステージが変わった最初の一週間。続きをみる",
+    "url": "https://note.com/tsunagu_proj181/n/n4a6eeadf81cf",
+    "date": "2026-09-06",
+    "tag": "note",
+    "image": "https://assets.st-note.com/production/uploads/images/310772511/rectangle_large_type_2_622afbe1319fae55d6763c6936c984b5.png?width=800",
+    "readingMin": null
+  },
+  {
+    "id": "n1",
     "title": "分けていた2人のAIを、分けたままつないだ",
     "excerpt": "私の手元では、ClaudeとChatGPTが働いている。愛称は、くろーどさまとチャッピー。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/n4a0287b3d790",
@@ -10,7 +20,7 @@
     "readingMin": null
   },
   {
-    "id": "n1",
+    "id": "n2",
     "title": "11時間36分の音声ログから、一日の行動を可視化してみた",
     "excerpt": "一日を通して、ChatGPTの音声会話機能「Live」でAIと会話する実験をした。音声セッション全体は12時間11分、423発話。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/n137c2fa293b2",
@@ -20,7 +30,7 @@
     "readingMin": null
   },
   {
-    "id": "n2",
+    "id": "n3",
     "title": "変わったことと、変えたことは同じではない",
     "excerpt": "リフォームが終わって、約3か月。水道、ガス、電気の使用量を、前年の同じ時期と比べてみた。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/n001962743e7c",
@@ -30,7 +40,7 @@
     "readingMin": null
   },
   {
-    "id": "n3",
+    "id": "n4",
     "title": "勝てないボスは、分解する",
     "excerpt": "ゼルダで、同じボスに勝てない日が続いた。何度挑んでも、負ける。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/ne9643c51dd80",
@@ -40,23 +50,13 @@
     "readingMin": null
   },
   {
-    "id": "n4",
+    "id": "n5",
     "title": "そのノートは、誰が開くのか",
     "excerpt": "エンディングノートを、久しぶりに開いた。ずいぶん前に買って、思い出したときだけ書き足してきた一冊。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/n039775804d13",
     "date": "2026-08-02",
     "tag": "note",
     "image": "https://assets.st-note.com/production/uploads/images/299840596/rectangle_large_type_2_02e89c86a6be1c518d74639a604560fa.png?width=800",
-    "readingMin": null
-  },
-  {
-    "id": "n5",
-    "title": "壊れたのか、光っているだけか",
-    "excerpt": "土曜の夜。数週間考えてきた計画に、決着をつけた。続きをみる",
-    "url": "https://note.com/tsunagu_proj181/n/n65b4e55a6554",
-    "date": "2026-07-26",
-    "tag": "note",
-    "image": "https://assets.st-note.com/production/uploads/images/297638910/rectangle_large_type_2_a891b3d272e227f9f4ab35f701aa6e55.png?width=800",
     "readingMin": null
   }
 ]
