@@ -1,6 +1,16 @@
 [
   {
     "id": "n0",
+    "title": "SFが日常になってきた週末。AIの進化の先で、私たちは何を選ぶのか",
+    "excerpt": "■ 画面の変化の向こうにあるものAIの進化が、加速度的に進んでいる気がする。続きをみる",
+    "url": "https://note.com/tsunagu_proj181/n/ne39440cbdf3c",
+    "date": "2026-09-27",
+    "tag": "note",
+    "image": "https://assets.st-note.com/production/uploads/images/318226290/rectangle_large_type_2_35fe88bc89a29811858f1c26bd051fa4.png?width=800",
+    "readingMin": null
+  },
+  {
+    "id": "n1",
     "title": "AI秘書がつくってくれた、投資に向き合う時間",
     "excerpt": "■長年、気になっていた投資の世界以前から興味はあったものの、じっくり向き合う時間をつくれずにいた投資の世界。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/n0ee34ca0e32e",
@@ -10,7 +20,7 @@
     "readingMin": null
   },
   {
-    "id": "n1",
+    "id": "n2",
     "title": "「外向きの成果物を置かない週」に、内側で進んでいた準備",
     "excerpt": "■すぐに何かを始めない一週間ステージが変わった最初の一週間。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/n4a6eeadf81cf",
@@ -20,7 +30,7 @@
     "readingMin": null
   },
   {
-    "id": "n2",
+    "id": "n3",
     "title": "分けていた2人のAIを、分けたままつないだ",
     "excerpt": "私の手元では、ClaudeとChatGPTが働いている。愛称は、くろーどさまとチャッピー。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/n4a0287b3d790",
@@ -30,7 +40,7 @@
     "readingMin": null
   },
   {
-    "id": "n3",
+    "id": "n4",
     "title": "11時間36分の音声ログから、一日の行動を可視化してみた",
     "excerpt": "一日を通して、ChatGPTの音声会話機能「Live」でAIと会話する実験をした。音声セッション全体は12時間11分、423発話。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/n137c2fa293b2",
@@ -40,23 +50,13 @@
     "readingMin": null
   },
   {
-    "id": "n4",
+    "id": "n5",
     "title": "変わったことと、変えたことは同じではない",
     "excerpt": "リフォームが終わって、約3か月。水道、ガス、電気の使用量を、前年の同じ時期と比べてみた。続きをみる",
     "url": "https://note.com/tsunagu_proj181/n/n001962743e7c",
     "date": "2026-08-16",
     "tag": "note",
     "image": "https://assets.st-note.com/production/uploads/images/303976302/rectangle_large_type_2_1cfe6ca46e538882b6b84e81c54fd580.png?width=800",
-    "readingMin": null
-  },
-  {
-    "id": "n5",
-    "title": "勝てないボスは、分解する",
-    "excerpt": "ゼルダで、同じボスに勝てない日が続いた。何度挑んでも、負ける。続きをみる",
-    "url": "https://note.com/tsunagu_proj181/n/ne9643c51dd80",
-    "date": "2026-08-09",
-    "tag": "note",
-    "image": "https://assets.st-note.com/production/uploads/images/301967575/rectangle_large_type_2_62f83df14da896e58ffca769066fd3c1.png?width=800",
     "readingMin": null
   }
 ]
